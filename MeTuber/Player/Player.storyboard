@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+    </dependencies>
+    <scenes>
+        <!--AV Player View Controller-->
+        <scene sceneID="plI-XX-hnL">
+            <objects>
+                <avPlayerViewController storyboardIdentifier="Player" videoGravity="AVLayerVideoGravityResizeAspect" id="fyM-5s-dnP" customClass="PlayerVC" customModule="MeTuber" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6l7-ZM-L0z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-300" y="-123"/>
+        </scene>
+    </scenes>
+</document>

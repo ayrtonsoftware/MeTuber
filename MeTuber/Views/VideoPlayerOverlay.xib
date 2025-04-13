@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VideoPlayerOverlayView" customModule="MeTuber" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="390"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9C-Gu-OkM">
+                    <rect key="frame" x="0.0" y="256" width="409" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="It8-oj-evT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <slider hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0G4-O0-zN4">
+                    <rect key="frame" x="18" y="218" width="373" height="31"/>
+                </slider>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="N9C-Gu-OkM" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="1vg-GO-Ffa"/>
+                <constraint firstItem="N9C-Gu-OkM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="210-ve-jdQ"/>
+                <constraint firstItem="0G4-O0-zN4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="4vA-cQ-zPZ"/>
+                <constraint firstItem="N9C-Gu-OkM" firstAttribute="top" secondItem="0G4-O0-zN4" secondAttribute="bottom" constant="8" id="BqK-MQ-w8V"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="N9C-Gu-OkM" secondAttribute="trailing" id="Clb-ek-har"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0G4-O0-zN4" secondAttribute="trailing" constant="20" id="F61-Mn-hrr"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="N9C-Gu-OkM" id="L5e-uZ-JcR"/>
+                <outlet property="slider" destination="0G4-O0-zN4" id="50Q-wQ-4Yc"/>
+            </connections>
+            <point key="canvasLocation" x="-20.610687022900763" y="-301.40845070422534"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

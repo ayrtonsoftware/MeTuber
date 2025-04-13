@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VideoCell" id="pGM-ff-5pl" customClass="VideoCell" customModule="MeTuber" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="311" height="265"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2b4-uc-tkz">
+                <rect key="frame" x="0.0" y="0.0" width="311" height="265"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwO-pl-Eq1">
+                        <rect key="frame" x="4" y="210" width="303" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="rdL-Yy-qV6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w8G-CI-oKv" customClass="GIFAnimationView" customModule="MeTuber" customModuleProvider="target">
+                        <rect key="frame" x="35" y="25" width="241" height="128"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="jwO-pl-Eq1" secondAttribute="trailing" constant="4" id="5zK-wD-gji"/>
+                    <constraint firstItem="w8G-CI-oKv" firstAttribute="centerX" secondItem="jwO-pl-Eq1" secondAttribute="centerX" id="BLW-mx-Ybk"/>
+                    <constraint firstItem="w8G-CI-oKv" firstAttribute="top" secondItem="2b4-uc-tkz" secondAttribute="top" constant="25" id="Djg-52-dfX"/>
+                    <constraint firstItem="jwO-pl-Eq1" firstAttribute="bottom" secondItem="2b4-uc-tkz" secondAttribute="bottomMargin" id="p2G-dG-gaS"/>
+                    <constraint firstItem="jwO-pl-Eq1" firstAttribute="top" secondItem="w8G-CI-oKv" secondAttribute="bottom" constant="57" id="qKL-KK-Nka"/>
+                    <constraint firstItem="w8G-CI-oKv" firstAttribute="leading" secondItem="2b4-uc-tkz" secondAttribute="leading" constant="35" id="sIg-LR-zxL"/>
+                    <constraint firstItem="jwO-pl-Eq1" firstAttribute="leading" secondItem="2b4-uc-tkz" secondAttribute="leading" constant="4" id="u3J-LD-mAG"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+            <size key="customSize" width="311" height="265"/>
+            <connections>
+                <outlet property="thumbnailImageView" destination="w8G-CI-oKv" id="Wlr-3a-aov"/>
+                <outlet property="videoId" destination="jwO-pl-Eq1" id="XwT-Si-koX"/>
+            </connections>
+            <point key="canvasLocation" x="116.79389312977099" y="27.112676056338028"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
